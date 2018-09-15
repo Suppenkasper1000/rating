@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
+import {AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/firestore';
+
+export interface Item {
+  name: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -6,5 +12,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'beer-rating';
+  constructor() {}
+
+ /* addItem() {
+   this.itemsCollection.add({name: 'fuck'});
+  } */
+
+
 }

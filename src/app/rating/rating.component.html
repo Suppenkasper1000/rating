@@ -1,0 +1,10 @@
+<ng-container *ngIf="(ratings$ | async); let ratings;">
+  <div *ngIf="ratings.length>0">
+    <div *ngFor="let rating of ratings">
+      <p>{{rating.name}}</p>
+      <p>{{rating.price}}</p>
+      <p>{{rating.rating}}</p>
+      <p>{{rating.desc}}</p>
+    </div>
+  </div>
+</ng-container>
